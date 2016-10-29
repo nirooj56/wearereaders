@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>We Are Readers [WAR] | Home</title>
+	<META NAME="author" CONTENT="Niroj Bista">
+	<META NAME="Keywords" CONTENT="we are readers, war publications, we are readers publications, ebooks download , free ebook download">
+	<META NAME="Language" CONTENT="English">
+	<META HTTP-EQUIV="Expires" CONTENT="never">
+	<META NAME="Copyright" CONTENT="We Are Readers">
+	<meta name="email" content="warpublication.com">
+	<META NAME="distribution" CONTENT="Global">
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="shortcut icon" href="images/sicon.png" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+
+	</script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript">
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
+	</script>
+	</script>
+	<!----webfonts---->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+	<!----//webfonts---->
+	<!----start-top-nav-script---->
+	<script>
+		$(function() {
+			var pull = $('#pull');
+			menu = $('nav ul');
+			menuHeight = menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function() {
+				var w = $(window).width();
+				if (w > 320 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+		});
+
+	</script>
+	<!----//End-top-nav-script---->
+</head>
+
+<body>
+	<!-----start-container----->
+	<!-----header-section------>
+	<div class="header-section">
+		<!----- start-header---->
+		<div id="home" class="header">
+			<div class="container">
+				<div class="top-header">
+					<div class="logo">
+						<a href="#"><img src="images/logo.png" title="logo" /></a>
+					</div>
+					<!----start-top-nav---->
+					<nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="index.html">Home </a></li>
+							<li><a href="about.html">About </a></li>
+							<li><a href="http://facebook.com/warpublications/" target="_blank">Facebook</a></li>
+							<li><a href="https://twitter.com/warpublications" target="_blank">Twitter</a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!----- //End-header---->
+		<!----- start-slider---->
+		<!----start-slider-script---->
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function() {
+				// Slideshow 4
+				$("#slider4").responsiveSlides({
+					auto: true,
+					pager: true,
+					nav: true,
+					speed: 500,
+					namespace: "callbacks",
+					before: function() {
+						$('.events').append("<li>before event fired.</li>");
+					},
+					after: function() {
+						$('.events').append("<li>after event fired.</li>");
+					}
+				});
+
+			});
+
+		</script>
+		<!----//End-slider-script---->
+		<!-- Slideshow 4 -->
+		<div id="top" class="callbacks_container">
+			<ul class="rslides" id="slider4">
+				<img src="images/slide.jpg" alt="">
+			</ul>
+		</div>
+		<!----- //End-slider---->
+	</div>
+	<div class="clearfix"> </div>
+	<!-----//header-section----->
+	<!-----widget----->
+	<div class="container">
+		<div class="widget">
+			<iframe src="https://app.box.com/embed_widget/s/p1uq8m2p8yu1htz6zi5a?view=icon&sort=name&direction=ASC&theme=gray" width="800" height="500" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="clearfix"> </div>
+	<!----End-wigdet----->
+	<!-----footer----->
+	<div class="footer">
+		<div class="container">
+			<p>Copyright &copy; <span>WAR</span>, 2016 | Crafted by <a href="http://www.nirojbista.com.np" target="_blank"><span>CYCO</span></a></p>
+		</div>
+	</div>
+	<!---//footer----->
+
+</body>
+
+</html>
